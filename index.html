@@ -3,146 +3,103 @@
 <head>
     <title>CS 110 Personal Page</title>
     <meta charset="UTF-8">
-    <style>
-        /* Base Styles */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        /* Profile Section */
-        img {
-            display: block;
-            margin: 0 auto 20px;
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-        }
-
-        h1, h2 {
-            text-align: center;
-            margin: 10px 0;
-        }
-
-        h1 {
-            font-family: 'Georgia', serif;
-            font-size: 2.2em;
-        }
-
-        h2 {
-            font-weight: normal;
-            font-size: 1.4em;
-            color: #555;
-        }
-
-        /* Sections */
-        h3 {
-            font-family: 'Arial', sans-serif;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 5px;
-            margin-top: 25px;
-            margin-bottom: 15px;
-        }
-
-     
-
-        #socials a {
-            display: inline-block;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-
-        /* Lists */
-        ul {
-            margin-left: 30px;
-            padding-left: 10px;
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
-
-        /* Projects Links */
-        #projects a {
-            text-decoration: none;
-        }
-
-        /* Spacing */
-        p {
-            margin-bottom: 15px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <!-- Profile Picture -->
-    <img src="cat.jpg" alt="Profile picture">
-    
-    <!-- Name and Subheading -->
-    <h1>Jefren Ofiaza</h1>
-    <h2>Computer Science Student</h2>
-    
-    <!-- Social Links -->
-    <h3 id="socials">Social Media</h3>
-    <p>
-        <a href="https://www.instagram.com/">Instagram</a>
-    </p>
-    
-    <!-- About Section -->
-    <h3 id="about">About Me</h3>
-    <p>
-        I like to rock climb. I can play the trombone. This is my fourth time out of the country.
-    </p>
-    
-    <!-- Work Experience -->
-    <h3 id="work">Work Experience</h3>
-    <ul>
-        <li><b>Eco Car</b> - Model Tester (Winter Quarter - Spring Quarter)</li>
-        <li>Worked with MATLAB Stateflow to test the models for the car</li>
-    </ul>
-    
-    <!-- Education -->
-    <h3 id="education">Education</h3>
-    <ul>
-        <li>High School Diploma</li>
-        <li>2nd Year College</li>
-    </ul>
-    
-    <!-- Coursework -->
-    <h3 id="coursework">Coursework</h3>
-    <ul>
-        <li>Intro and Intermediate Data Structures and Algorithms</li>
-        <li>Software Construction</li>
-        <li>Machine Organization and Assembly Language</li>
-        <li>Discrete Structures</li>
-        <li>Logic Design</li>
-        <li>Design of Operating Systems</li>
-        <li>Design and Architecture of Comp Systems</li>
-    </ul>
-    
-    <!-- Skills -->
-    <h3 id="skills">Skills</h3>
-    <ul>
-        <li>MATLAB Stateflow</li>
-        <li>Simulink</li>
-        <li>C++</li>
-        <li>C#</li>
-        <li>C</li>
-        <li>JavaScript</li>
-        <li>Tailwind CSS</li>
-        <li>Git</li>
-        <li>HTML</li>
-    </ul>
-    
-    <!-- Projects -->
-    <h3 id="projects">Projects</h3>
-    <ul>
-        <li>Eco Car work (MATLAB Stateflow testing)</li>
-        <li><a href="https://github.com/acm-ucr/h4b-website">ACM Hungry for Biscuits Website</a> - Contributed to development</li>
-    </ul>
+    <div class="container">
+        <!-- Profile Section -->
+        <div class="profile-section">
+            <img src="images/profile.jpg" alt="Profile picture" class="profile-img">
+            <h1>Jefren Ofiaza</h1>
+            <h2>Computer Science Student</h2>
+        </div>
+
+        <!-- Social Links -->
+        <div class="section">
+            <h3 id="socials">Social Media</h3>
+            <div class="social-links">
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div class="section">
+            <h3 id="about">About Me</h3>
+            <div class="content-with-image">
+                <img src="images/about-image.jpg" alt="About me" class="content-image">
+                <p>
+                    I like to rock climb. I can play the trombone. This is my fourth time out of the country.
+                </p>
+            </div>
+        </div>
+
+        <!-- Work Experience -->
+        <div class="section">
+            <h3 id="work">Work Experience</h3>
+            <img src="images/work-image.jpg" alt="Work experience" class="section-image">
+            <ul class="main-list">
+                <li><b>Eco Car</b> - Model Tester (Winter Quarter  - Spring Quarter)</li>
+                <li>Worked with MATLAB Stateflow to test the models for the car</li>
+            </ul>
+        </div>
+
+        <!-- Education -->
+        <div class="section">
+            <h3 id="education">Education</h3>
+            <img src="images/education-image.jpg" alt="Education" class="section-image">
+            <ul class="main-list">
+                <li>High School Diploma</li>
+                <li>2nd Year College</li>
+            </ul>
+        </div>
+
+        <!-- Coursework -->
+        <div class="section">
+            <h3 id="coursework">Coursework</h3>
+            <ul class="main-list">
+                <li>Intro and Intermediate Data Structures and Algorithms</li>
+                <li>Software Construction</li>
+                <li>Machine Organization and Assembly Language</li>
+                <li>Discrete Structures</li>
+                <li>Logic Design</li>
+                <li>Design of Operating Systems</li>
+                <li>Design and Architecture of Comp Systems</li>
+            </ul>
+        </div>
+
+        <!-- Skills -->
+        <div class="section">
+            <h3 id="skills">Skills</h3>
+            <img src="images/skills-image.jpg" alt="Skills" class="section-image">
+            <ul class="skills-list">
+                <li>MATLAB Stateflow</li>
+                <li>Simulink</li>
+                <li>C++</li>
+                <li>C#</li>
+                <li>C</li>
+                <li>JavaScript</li>
+                <li>Tailwind CSS</li>
+                <li>Git</li>
+                <li>HTML</li>
+            </ul>
+        </div>
+
+        <!-- Projects -->
+        <div class="section">
+            <h3 id="projects">Projects</h3>
+            <div class="project">
+                <img src="images/project1.jpg" alt="Eco Car Project" class="project-image">
+                <div class="project-details">
+                    <p>Eco Car work (MATLAB Stateflow testing)</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/project2.jpg" alt="ACM Project" class="project-image">
+                <div class="project-details">
+                    <a href="https://github.com/acm-ucr/h4b-website" target="_blank">ACM Hungry for Biscuits Website</a> - Contributed to development
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
